@@ -57,7 +57,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #06c5e2;
+  background-color: rgba(6, 197, 226,0.5);
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -113,7 +113,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: #06a4e2;
+    background: rgba(6, 197, 226,0.5);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
@@ -140,6 +140,7 @@ a:focus {
 }
 .intro .intro-body .intro-text {
   font-size: 18px;
+  min-height: 3.2em;
 }
 @media (min-width: 768px) {
   .intro {
@@ -314,3 +315,28 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
+
+
+/** Typed cursor*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+/** ENDOF Typed cursor*************************/
