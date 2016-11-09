@@ -233,6 +233,50 @@ a:focus {
   -o-background-size: cover;
 }
 
+.about-section {
+  text-shadow: -5px 0px 5px rgba(87, 122, 230, 0.69);
+  color: white;
+  width: 100%;
+  background: url(../img/sbg02.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.about-section p{
+  margin: 0 0 10px;
+  text-align: justify;
+}
+
+.showcase-section {
+  text-shadow: -5px 0px 5px rgba(87, 122, 230, 0.69);
+  color: white;
+  width: 100%;
+  background: url(../img/sbg03.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.showcase-section p{
+  margin: 0 0 10px;
+  text-align: justify;
+}
+
+.contact-section {
+  text-shadow: -5px 0px 5px rgba(87, 122, 230, 0.69);
+  color: white;
+  width: 100%;
+  background: url(../img/sbg05.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
 
 #map {
   width: 100%;
