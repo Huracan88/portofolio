@@ -23,6 +23,7 @@
     <!-- Plugin JavaScript -->
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/galleria.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -37,6 +38,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
+
+    <link type="text/css" rel="stylesheet" href="vendor/galleria/themes/classic/galleria.classic.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -142,9 +145,9 @@
           <img src="https://goo.gl/azBlwg" class="img-responsive img-circle" />
         </div>
         <div class="col-lg-6 col-lg-offset-2">
-            <p>Hola, soy Andrés Pinto Cámara, desarrollador web mexicano, Ingeneniero en Sistemas de Información desde el 2009.</p>
-            <p>A lo largo de mi carrera he trabajado en el desarrollo de sistemas y aplicaciones enfocados a la gestión de recursos administrativos como sistemas de nómina, aplicativos de reportes, software de control de asistencia, programas estadísticos entre otros.</p>
-            <p>Fluido en PHP, MySQ y Javascript.  Nunca dejo de investigar y aprender nuevas tecnologías para mi caja de herramietas.</p>
+            <p>Hola, soy Andrés Pinto, un mexicano con ideas innovadoras enfocado al desarrollo web.</p>
+            <p>He trabajado en el desarrollo de sistemas y aplicaciones enfocados a la gestión de recursos administrativos como sistemas de nómina, aplicativos de reportes, software de control de asistencia, programas estadísticos entre otros.</p>
+            <p>Fluido en PHP, MySQ y Javascript.  No dejo de investigar y aprender nuevas tecnologías para mi caja de herramientas.</p>
         </div>
       </div>
     </div>
@@ -153,10 +156,23 @@
     <div id="section2" class="section content-section text-center showcase-section">
         <div class="row">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                <div class="col-lg-12">
+                    <!-- <h2 id='gallery-title'>Showcase</h2> -->
+
+                    <div class="row">
+                      <div class="col-md-3">
+                        <a id='ga1' href="#">Académico </a><br/>
+                        <a id='ga2' href="#">Project 2 </a>
+
+                      </div>
+                      <div class="col-md-9">
+                        <div class="galleria" id="ac-gallery">
+                        </div>
+                      </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
@@ -207,8 +223,108 @@
     <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
 
     <!-- Theme JavaScript -->
-
-
+    <script>
+    	// (function() {
+      //     var data_ac = [
+      //       {
+      //         image: 'img/screenshots/ac/md/ac01_tn.jpg',
+      //         thumb: 'img/screenshots/ac/tn/ac01_tn.jpg',
+      //         big:   'img/screenshots/ac/ac01.png',
+      //         //title: 'my first image',
+      //         //description: 'Lorem ipsum caption'
+      //         //link: 'http://domain.com
+      //       },
+      //       {
+      //         image: 'img/screenshots/ac/md/ac02_tn.jpg',
+      //         thumb: 'img/screenshots/ac/tn/ac02_tn.jpg',
+      //         big:   'img/screenshots/ac/ac02.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/ac/md/ac03_tn.jpg',
+      //         thumb: 'img/screenshots/ac/tn/ac03_tn.jpg',
+      //         big:   'img/screenshots/ac/ac03.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/ac/md/ac04_tn.jpg',
+      //         thumb: 'img/screenshots/ac/tn/ac04_tn.jpg',
+      //         big:   'img/screenshots/ac/ac04.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/ac/md/ac05_tn.jpg',
+      //         thumb: 'img/screenshots/ac/tn/ac05_tn.jpg',
+      //         big:   'img/screenshots/ac/ac05.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/ac/md/ac06_tn.jpg',
+      //         thumb: 'img/screenshots/ac/tn/ac06_tn.jpg',
+      //         big:   'img/screenshots/ac/ac06.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/ac/md/ac07_tn.jpg',
+      //         thumb: 'img/screenshots/ac/tn/ac07_tn.jpg',
+      //         big:   'img/screenshots/ac/ac07.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/ac/md/ac08_tn.jpg',
+      //         thumb: 'img/screenshots/ac/tn/ac08_tn.jpg',
+      //         big:   'img/screenshots/ac/ac08.png',
+      //       },
+      //     ];
+      //
+      //     var data_gl = [
+      //       {
+      //         image: 'img/screenshots/gl/md/gl01_tn.jpg',
+      //         thumb: 'img/screenshots/gl/tn/gl01_tn.jpg',
+      //         big:   'img/screenshots/gl/gl01.png',
+      //         //title: 'my first image',
+      //         //description: 'Lorem ipsum caption'
+      //         //link: 'http://domain.com
+      //       },
+      //       {
+      //         image: 'img/screenshots/gl/md/gl02_tn.jpg',
+      //         thumb: 'img/screenshots/gl/tn/gl02_tn.jpg',
+      //         big:   'img/screenshots/gl/gl02.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/gl/md/gl03_tn.jpg',
+      //         thumb: 'img/screenshots/gl/tn/gl03_tn.jpg',
+      //         big:   'img/screenshots/gl/gl03.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/gl/md/gl04_tn.jpg',
+      //         thumb: 'img/screenshots/gl/tn/gl04_tn.jpg',
+      //         big:   'img/screenshots/gl/gl04.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/gl/md/gl05_tn.jpg',
+      //         thumb: 'img/screenshots/gl/tn/gl05_tn.jpg',
+      //         big:   'img/screenshots/gl/gl05.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/gl/md/gl07_tn.jpg',
+      //         thumb: 'img/screenshots/gl/tn/gl07_tn.jpg',
+      //         big:   'img/screenshots/gl/gl07.png',
+      //       },
+      //       {
+      //         image: 'img/screenshots/gl/md/gl08_tn.jpg',
+      //         thumb: 'img/screenshots/gl/tn/gl08_tn.jpg',
+      //         big:   'img/screenshots/gl/gl08.png',
+      //       },
+      //     ];
+      //
+      //     Galleria.loadTheme('vendor/galleria/themes/classic/galleria.classic.min.js');
+      //     Galleria.run('#ac-gallery',{
+      //       dataSource: data_ac,
+      //       height: 0.65,
+      //       carousel: true,
+      //       showInfo:false,
+      //       autoplay:true,
+      //       wait:true
+      //     });
+      //
+      //
+      //   }());
+    </script>
 </body>
 
 </html>
