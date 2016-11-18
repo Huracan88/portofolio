@@ -361,7 +361,15 @@ body {
 
 
 .galleria{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+}
+
+#showcase-menu{
+  padding-top: 20px;
+}
+
+.showcase-option{
+  margin-bottom: 5px;
 }
 
 

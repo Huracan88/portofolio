@@ -113,6 +113,96 @@ $(document).ready(function(){
         },
       ];
 
+      var data_sg = [
+        {
+          image: 'img/screenshots/sg/md/sg01_tn.jpg',
+          thumb: 'img/screenshots/sg/tn/sg01_tn.jpg',
+          big:   'img/screenshots/sg/sg01.png',
+          //title: 'my first image',
+          //description: 'Lorem ipsum caption'
+          //link: 'http://domain.com
+        },
+        {
+          image: 'img/screenshots/sg/md/sg02_tn.jpg',
+          thumb: 'img/screenshots/sg/tn/sg02_tn.jpg',
+          big:   'img/screenshots/sg/sg02.png',
+        },
+        {
+          image: 'img/screenshots/sg/md/sg03_tn.jpg',
+          thumb: 'img/screenshots/sg/tn/sg03_tn.jpg',
+          big:   'img/screenshots/sg/sg03.png',
+        },
+        {
+          image: 'img/screenshots/sg/md/sg04_tn.jpg',
+          thumb: 'img/screenshots/sg/tn/sg04_tn.jpg',
+          big:   'img/screenshots/sg/sg04.png',
+        },
+        {
+          image: 'img/screenshots/sg/md/sg05_tn.jpg',
+          thumb: 'img/screenshots/sg/tn/sg05_tn.jpg',
+          big:   'img/screenshots/sg/sg05.png',
+        },
+        {
+          image: 'img/screenshots/sg/md/sg06_tn.jpg',
+          thumb: 'img/screenshots/sg/tn/sg06_tn.jpg',
+          big:   'img/screenshots/sg/sg06.png',
+        },
+        {
+          image: 'img/screenshots/sg/md/sg07_tn.jpg',
+          thumb: 'img/screenshots/sg/tn/sg07_tn.jpg',
+          big:   'img/screenshots/sg/sg07.png',
+        },
+        {
+          image: 'img/screenshots/sg/md/sg08_tn.jpg',
+          thumb: 'img/screenshots/sg/tn/sg08_tn.jpg',
+          big:   'img/screenshots/sg/sg08.png',
+        },
+        {
+          image: 'img/screenshots/sg/md/sg09_tn.jpg',
+          thumb: 'img/screenshots/sg/tn/sg09_tn.jpg',
+          big:   'img/screenshots/sg/sg09.png',
+        },
+      ];
+
+      var data_su = [
+        {
+          image: 'img/screenshots/su/md/su01_tn.jpg',
+          thumb: 'img/screenshots/su/tn/su01_tn.jpg',
+          big:   'img/screenshots/su/su01.png',
+        },
+        {
+          image: 'img/screenshots/su/md/su02_tn.jpg',
+          thumb: 'img/screenshots/su/tn/su02_tn.jpg',
+          big:   'img/screenshots/su/su02.png',
+        },
+        {
+          image: 'img/screenshots/su/md/su03_tn.jpg',
+          thumb: 'img/screenshots/su/tn/su03_tn.jpg',
+          big:   'img/screenshots/su/su03.png',
+        },
+        {
+          image: 'img/screenshots/su/md/su04_tn.jpg',
+          thumb: 'img/screenshots/su/tn/su04_tn.jpg',
+          big:   'img/screenshots/su/su04.png',
+        },
+        {
+          image: 'img/screenshots/su/md/su05_tn.jpg',
+          thumb: 'img/screenshots/su/tn/su05_tn.jpg',
+          big:   'img/screenshots/su/su05.png',
+        },
+        {
+          image: 'img/screenshots/su/md/su06_tn.jpg',
+          thumb: 'img/screenshots/su/tn/su06_tn.jpg',
+          big:   'img/screenshots/su/su06.png',
+        },
+        {
+          image: 'img/screenshots/su/md/su07_tn.jpg',
+          thumb: 'img/screenshots/su/tn/su07_tn.jpg',
+          big:   'img/screenshots/su/su07.png',
+        },
+
+      ];
+
       Galleria.loadTheme('vendor/galleria/themes/classic/galleria.classic.min.js');
       var galeria = Galleria.run('#ac-gallery',{
         dataSource: data_ac,
@@ -131,6 +221,16 @@ $(document).ready(function(){
       $('#ga2').click(function(){
         Galleria.get(0).load(data_gl);
         console.log('cargando proyecto 2');
+      });
+
+      $('#ga3').click(function(){
+        Galleria.get(0).load(data_sg);
+        console.log('cargando proyecto 3');
+      });
+
+      $('#ga4').click(function(){
+        Galleria.get(0).load(data_su);
+        console.log('cargando proyecto 3');
       });
 
 
